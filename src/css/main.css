@@ -1,0 +1,361 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90%;
+  flex: 1 0 0;
+
+  &-logo {
+    background-image: url("../img/LOGO.png");
+    background-size: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    // height: 500px;
+    flex:0 1 500px;
+
+    @media (--screens) {
+      background-size: 600px;
+      flex: 0 0 700px;
+      width: 600px;
+    }
+
+    @media (--desktop) {
+      background-size: 600px;
+      flex: 0 0 700px;
+      width: 600px;
+    }
+
+    @media (--tablet) {
+      background-size: 450px;
+      flex: 0 0 700px;
+      width: 450px;
+    }
+
+    @media (--mobile) {
+      background-size: 300px;
+      flex: 0 0 400px;
+      width: 300px;
+    }
+
+  }
+
+  &-btn{
+    width: 20%;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--btnColor);
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    font-size: responsive 16px 22px;
+    font-weight: bold;
+
+  }
+
+  &-btn:before{
+    content:"";
+    transition:2s;
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    top:0;
+    left: 0;
+  }
+
+  &-btn:hover:before{
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+  }
+}
+
+.foot{
+  height: 10%;
+  background-color:var(--btnColor);
+  color:white;
+  text-align: center;
+
+  & p {
+    font-size: responsive 14px 20px;
+  }
+}
+
+.navigation{
+  background-image:url("../img/B.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  & h2{
+    text-align: center;
+    flex: 0 1 250px;
+    margin:0;
+    color:white;
+    font-size: responsive 16px 25px;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    flex: 0 1 400px;
+    height: 50px;
+  }
+
+  & ul li {
+    list-style: none;
+  }
+
+  & ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: responsive 9px 14px;
+    font-weight: bold;
+  }
+
+  & ul li a:hover{ 
+    border-bottom: 2px solid white;
+  }
+
+}
+
+.aboutFirma{
+  background-color:white;
+  height: 500px;
+
+  &-firmaBackground{
+    background-image: url("../img/campana.png");
+    background-repeat: no-repeat;
+    background-size: 428px;
+    background-position-y: 48px;
+    background-position-x: left; 
+    // background-position: left;
+    height: 500px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (--tablet) {
+        justify-content: center;
+      }
+
+    &-content{
+      flex: 0 1 650px;
+      margin-right:50px;
+      
+      @media (--tablet) {
+        margin-right: 0;
+        padding: 0 10px 0 10px;
+      }
+
+      & h3{
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        padding:0;
+        margin:0;
+      }
+
+      & p{
+        font-size:15px;
+      }
+    }
+  }
+
+  &-banner{
+    background-image: url("../img/B.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:40px;
+  }
+}
+
+.compromiso{
+  margin-top:40px;
+  height: 500px;
+
+  &-background{
+    background-image: url("../img/compromiso.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+
+    &-content{
+      flex:0 1 800px;
+      background-color: rgba(28,86,180,0.3);
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h3{
+        text-align: center;
+        margin:0;
+        padding: 0;
+        color:white;
+        font-size: responsive 28px 38px;
+        font-weight: bold;
+      }
+
+      & ul {
+        color:white;
+      }
+
+      & ul li:nth-child(n) {
+        padding-top:10px;
+        font-size: responsive 12px 16px;
+      }
+    }
+  }
+}
+
+.estructura{
+  display: flex;
+  flex-direction: column;
+
+  &-nav{
+    background-image: url("../img/B.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    & h2{
+      font-size:responsive 20px 25px;
+      color:white;
+      text-align: center;
+      margin:0;
+      padding:0;
+    }
+  }
+
+  &-fotos {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    @media (--tablet) {
+      border:15px solid blue;
+    }
+
+  }
+
+  &-foto{
+    flex: 0 0 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:var(--btnColor);
+    font-size: responsive 12px 15px;
+    margin:10px;
+  }
+
+}
+
+.personalFotoA:before{
+  @mixin fotoBefore var($btnColor);
+}
+
+
+.personalFotoA:before{
+  @mixin fotoBefore var($btnColor);
+}
+
+.personalFotoA:hover:before{
+  @mixin fotoHover "Jefe del Área Fiscal";
+}
+
+.personalFotoA{
+  @mixin foto url("../img/miguelmay.png");
+}
+
+
+.personalFotoB:before{
+  @mixin fotoBefore var($btnColor);
+}
+
+.personalFotoB:hover:before{
+  @mixin fotoHover "Directora del Área Penal";
+}
+
+.personalFotoB{
+  @mixin foto url("../img/deysi.png");
+}
+
+
+.personalFoto:before{
+  @mixin fotoBefore var($btnColor);
+}
+
+.personalFoto:hover:before{
+  @mixin fotoHover "Jefe del Área Civil, Laboral, Mercantil, Familiar";
+}
+
+.personalFoto{
+  @mixin foto url("../img/eduardo.png");
+}
+
+.footer{
+  width: 100%;
+  height: 120px;
+  background-image: url("../img/B.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  &-content{
+    flex: 1 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color:white;
+    
+    @media (--tablet) {
+      flex-direction: column;
+    }
+    
+    & div:nth-child(n) {
+      font-size: responsive 12px 16px;
+      font-weight: bold;
+    }
+  }
+
+  @media (--tablet) {
+    height: 230px;
+  }
+}

@@ -1,0 +1,31 @@
+
+@define-mixin fotoBefore  $data{
+  content:"";
+  transition: 1.2s;
+  text-align: center;
+  color:white;
+  width:100%;
+  flex: 0 0 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@define-mixin fotoHover $content, {
+  content: $content;
+  background-color: var(--btnColor);
+}
+
+@define-mixin foto $bg,{
+  width: 250px;
+  height: 250px;
+  background-image: $bg;
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

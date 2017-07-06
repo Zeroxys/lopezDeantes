@@ -1,0 +1,797 @@
+@font-face{
+	font-family: 'mifuente';
+	src:url('font/MyriadPro-Regular.otf');
+	} 
+@font-face{
+	font-family: 'mifuente2';
+	src:url('font/FuturaBook.ttf');
+}	
+ 
+
+/*------------Experiencia profesional------------*/
+
+.banner-2{
+	background: url(../img/E1.jpg);
+	width: 100%;
+	height: 550px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display:flex;
+	justify-content: flex-end; 
+	align-items: center;
+}
+
+.EP{
+	flex: 0 1 500px;
+	margin: 0 50px 0 50px;
+	font-family: 'mifuente';
+	color: #fff;
+	font-size: 16px;
+}
+
+.EP h1{
+	text-align: center;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*------------SERVICIOS EN COLUMNAS------------*/
+.contenedor-columnas{
+	width: 100%;
+	height: 350px;/*------------Modifico estaba muy grande------------*/
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.column-container{
+	flex: 1 0 0;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.columnasx3{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 150px;
+}
+
+.columnasx3 h2{
+	font-family: 'mifuente';
+	color:  #fff; 
+	font-size: 25px;
+	text-decoration: none;
+}
+.columnasx3 ul {
+	text-align: justify;
+	font-family: 'mifuente';
+	color:   #fff;  
+	font-size: 16px;
+	width: 90%;
+}
+
+.columnasx3 img{
+	width: 25%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Servicios LopezD*/
+
+.banner-1{
+	width: 100%;
+	background: url(../img/B.png);
+	clear: both;
+	height: 70px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.4s;
+}
+
+.banner-1 h1{
+	
+	text-align: center;
+	font-family: 'mifuente2';
+	color: rgb(1,38,57);
+	font-size: 45px;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 10px;
+	letter-spacing:2px;
+}
+
+
+/*SECCION AREA LEGAL */
+.banner-al{
+	background-image: url(../img/E1.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.banner-al h1{
+	text-align: center;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 50px;
+	text-decoration: none;
+	padding-top: 8rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
+
+}
+
+/*-----CUADRO DE SERVICIOS----------*/
+.serviciosContainer{
+	height: 500px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.servicios{
+	background-color: #f7f7f7;
+	width: 30%;
+	height: 500px;  /*-----SE AGREGO PORQUE EL BACKGROUND NO LLENABA TODO ( CHECAR )----------*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	text-align: center;
+	list-style: none;
+}
+
+.servicios_g h2{
+	text-align: justify;
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 2rem;
+	display: inline-block;
+
+
+}
+.servicios_g h3{
+	text-align: justify;
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 7rem;
+	text-transform: uppercase;
+}
+
+.ul{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3:hover {
+    color: #a4a4a4;
+}
+
+.banner-ap{
+	background-color: rgb(0,33,73);
+	float: right;
+	width: 70%;
+	height: 500px;
+	text-align: center;
+}
+
+
+.B{
+	background: url(../img/B.png);
+	width: 100%;
+	clear: both;
+	height: 40px;
+	text-align: center;
+	box-sizing: border-box;
+}	
+
+.AP{
+	flex: 0 0 60%;
+	display:flex;
+	justify-content: center;
+	text-decoration: none;
+	text-align: justify;
+}
+.AP h1{
+	text-align: center;
+	padding:20px;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.AP1{
+	margin: auto;
+	width: 60%;
+	height: 500px;
+	font-family: 'mifuente';
+	font-size: 17px;
+	text-decoration: none;
+	
+}
+.AP h2{
+	text-align: left;
+	font-family: 'mifuente';
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.AP h3{
+	text-align: left;
+	font-family: 'mifuente';
+	color: rgba(0,33,73);
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.AP h4{
+	text-align: left;
+	font-family: 'mifuente';
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.Fo_s{
+	background-image: url(../img/B1.png);
+	width: 100%;
+	height: 120px;
+	margin-top: 31rem;
+}
+	
+.banner-3{
+	background-color: white;
+	float: left;
+	width: 100%;
+	height: 550px;
+	background-repeat:no-repeat; /* No se repetira */
+	background-size:cover; /* Imagen al 100% del ancho */
+	background-attachment: fixed; /* Posicion fija para la imagen */
+	text-align: center;
+}	
+
+.banner-3 h1{
+	margin: 0 auto;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 1rem;
+	letter-spacing: 3px;
+}
+
+
+.A h2{
+	
+	font-family: 'mifuente';
+	color: black;
+	font-size: 26px;
+	text-decoration: none;
+	text-align: justify;
+	letter-spacing: 2px;
+	
+}
+
+.A{
+	width: 45%;
+	text-decoration: none;
+	text-align: justify;
+	margin-left: 10rem;
+	margin-top: 5rem;
+	background: rgba(28, 86, 180, 0.3);
+}
+
+
+/*SECCION CONTABILIDAD */
+.banner-4{
+	background-image: url(../img/contabilidad.jpg);
+	width: 100%;
+	height: 300px;/*SE CAMBIO EL HEIGTH PARA QUE SE VIERAN PAREJOS TODOS*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center center;
+	display:flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}	
+
+.banner-4 h1{
+	text-align: center;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	padding-top: 8rem;
+	font-weight: bolder;
+	background-color: rgba(28, 86, 180, 0.7);
+	padding: 50px;
+
+}
+
+/*SECCION SERVICIOS */
+.serviciosContainer{
+	height: 500px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.serviciosc{
+	background-color: #f7f7f7;
+	width: 35%;
+	height: 700px;  /*-----SE AGREGO PORQUE EL BACKGROUND NO LLENABA TODO ( CHECAR )----------*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	text-align: center;
+	list-style: none;
+}
+
+.servicios_c h2{
+	text-align: justify;
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 2rem;
+	display: inline-block;
+
+
+}
+.servicios_c h3{
+	text-align: justify;
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 3rem;
+	text-transform: uppercase;
+}
+
+.ul{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3:hover {
+    color: #a4a4a4;
+}
+
+/*SECCION CONTABILIDAD DESCRIPCIÓN ÁREAS */
+.banner-contabilidad{
+	background-color: rgb(0,33,73);
+	float: right;
+	width: 70%;
+	height: 500px;
+	text-align: center;
+}
+.contable{
+	flex: 0 0 60%;
+	display:flex;
+	justify-content: center;
+	text-decoration: none;
+	text-align: justify;
+}
+.contable h1{
+	text-align: center;
+	padding:20px;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.Acontable{
+	margin: auto;
+	width: 60%;
+	height: 500px;
+	font-family: 'mifuente';
+	font-size: 17px;
+	text-decoration: none;
+	
+}
+.Acontable h2{
+	text-align: left;
+	font-family: 'mifuente';
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.Acontable h3{
+	text-align: left;
+	font-family: 'mifuente';
+	color: rgba(0,33,73);
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.Acontable h4{
+	text-align: left;
+	font-family: 'mifuente';
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*
+.contabilidad{
+	background-color: #f7f7f7;
+    width: 100%;
+    height: 500px;
+}
+
+.AC{
+	height: 100%;
+	width: 700px;
+	text-decoration: none;
+	text-align: justify;
+	float: right;
+	background: rgba(28, 86, 180, 0.5);
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+}
+
+.AC h1{
+	margin: 0 auto;
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 3px;
+	
+}
+.AC h2{
+	
+	font-family: 'mifuente';
+	color: #fff;
+	text-decoration: none;
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 20px;
+	
+	
+}
+
+.banner-6{
+	width: 80%;
+	position: static;
+	background-position: initial;
+	margin: 0px auto;
+	background-repeat: no-repeat;
+	background-repeat:no-repeat; /* No se repetira */
+/*	background-size:cover; /* Imagen al 100% del ancho */
+/*	background-attachment: fixed; /* Posicion fija para la imagen */
+/*	text-align: center;
+	padding:0 0 30px 0;
+}	
+*/
+
+.rif{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	text-align: justify;
+}
+
+.rif h1{
+	margin: 0 auto;
+	font-family: 'mifuente2';
+	color: rgb(0,33,73);
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.rif h2{
+	margin: 0 auto;
+	font-family: 'mifuente2';
+	color: rgb(0,33,73);
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+.rif p{
+	font-family: 'mifuente';
+	color: black;
+	font-size: 16px;
+	
+	text-decoration: none;
+
+}
+
+.rif ul li{
+	font-family: 'mifuente';
+	color: black;
+	font-size: 16px;
+	
+	text-decoration: none;
+}
+.Foc{
+	background-image: url(../img/B1.png);
+	width: 100%;
+	height: 120px;
+	margin-top: 53rem;
+}
+
+
+.F1c {
+
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-left: 14rem;
+	margin-top: 1rem;
+	text-decoration:none;
+}
+
+.F2c {
+	
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-top: 1rem;
+
+}
+
+.F3c{
+	
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-top: 1rem;
+}
+
+
+
+
+/*SECCION AUDITORIA*/
+.afe{
+	width: 100%;
+	height: 600px;
+	
+}
+
+
+.banner-5{
+	background: url(../img/AUDITORIA1.png);
+	width: 100%;
+	height: 300px;/*SE CAMBIO EL HEIGTH PARA QUE SE VIERAN PAREJOS TODOS*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center center;
+	display:flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}	
+
+.banner-5 h1{
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: rgba(28, 86, 180, 0.7);
+	width: 300px;
+	padding: 50px;
+}
+
+.auditoriafp{
+	width: 100%;
+	background-color: rgb(0,33,73);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.AFE {
+	width:400px;
+	margin-bottom: 30px;
+}
+
+.AFE h1{
+	font-family: 'mifuente2';
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	text-align: justify;
+	text-align: center;
+
+}
+
+.AD h2{
+	
+	font-family: 'mifuente';
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: justify;	
+}
+
+.AD{
+	text-align: center;
+	text-decoration: none;
+	text-align: justify;
+	width: 500px;
+	margin:4rem 4rem;
+}
+
+.AD h3{
+	font-family: 'mifuente';
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: justify;
+	
+	
+
+}
+
+.ADG{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #fff;
+}
+
+.AG {
+	width:300px;
+	height: 100%;
+}
+
+.AG h1{
+	font-family: 'mifuente2';
+	color: rgb(0,33,73);
+	font-size: 45px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.AGI h2{
+	
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+	font-size: 16px;
+	text-decoration: none;
+	text-align: justify;
+
+	
+}
+
+.AGI{
+	margin: auto;
+	text-align: center;
+	text-decoration: none;
+	text-align: justify;
+	width: 500px;
+	margin: 4rem 4rem;
+}
+
+.AGI h3{
+	font-family: 'mifuente';
+	color:rgb(0,33,73);
+	font-size: 16px;
+	text-decoration: none;
+	text-align: justify;
+	
+	
+
+}
+
+.Fo_a{
+	background-image: url(../img/B1.png);
+	width: 100%;
+	height: 120px;
+}	
+.F1_a {
+
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-left: 14rem;
+	margin-top: 1rem;
+	text-decoration:none;
+}
+
+.F2_a {
+	
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-top: 1rem;
+
+}
+
+.F3_a{
+	
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+	float: left;
+	margin-top: 1rem;
+
+}

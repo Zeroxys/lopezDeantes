@@ -1,0 +1,10 @@
+@import "setup.css";
+@import "mixins.css";
+@import "variables.css";
+@import "main.css";
+
+@custom-media --mobile ( max-width : 500px);
+@custom-media --tablet ( max-width : 750px);
+@custom-media --desktop ( max-width : 800px);
+@custom-media --screens ( max-width : 1200px);
+@custom-media --photos (max-width : 810px);

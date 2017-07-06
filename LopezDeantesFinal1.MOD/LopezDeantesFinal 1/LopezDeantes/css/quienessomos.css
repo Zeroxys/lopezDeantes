@@ -1,0 +1,464 @@
+@font-face{
+	font-family: 'mifuente';
+	src:url('font/MyriadPro-Regular.otf');
+	} 
+@font-face{
+	font-family: 'mifuente2';
+	src:url('font/FuturaBook.ttf');
+}	
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header, body {
+	width:100%;
+	height: 100vh; 
+}
+
+/*-------Nav------------- */
+.header{
+	width: 100%;
+	background-image: url(../img/B.png);
+	height: 80px;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;
+}
+
+.P{
+	color: #fff;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "mifuente2";
+	flex: 1 0 0;
+}
+
+.logo img{
+	float: left;
+	width: 4.5%;
+	padding-top: 7px;
+}
+
+nav{
+	display:flex;
+	justify-content: center;
+	align-items:center; 
+}
+
+nav ul {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+nav ul li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+nav ul li a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "mifuente2";
+	padding: 10px 10px;
+
+}
+
+nav ul li a:hover{
+	border-bottom: 2px white solid;
+}
+
+
+/*--------La firma---------------------*/
+
+.firmaContainer {
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 450px;
+}
+
+.torre{
+	background-image: url(../img/P.png);
+	background-repeat: no-repeat;
+	background-size: 425px;/*--------Cambie tamaño---------------------*/
+	/*--------  background-position: left center;  (Si se quita se aprecia toda la imagen checalo!)---------------------*/
+	height: 450px;
+	flex:1 0 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+.aboutFirmaContainer {
+	flex: 0 0 800px;
+	padding: 0 30px 0 30px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.aboutFirma {
+	flex: 0 0 750px;
+	font-family: "mifuente";
+	text-align: justify;
+	font-size: 16px;/*---- Aregue ----*/
+}
+
+.aboutFirma h1{
+	text-align: center;
+	font-family: 'mifuente2';
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+/*-----------------Nuestro Compromiso---------------------*/
+
+.compromiso{
+	background: url(../img/Compromiso.jpg);
+	width: 100%;
+	height: 550px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	display:flex;
+	justify-content: flex-start;
+}
+
+.compromisoContainer{
+	width: 60%;
+	font-family: 'mifuente';
+	color: black;
+	font-size: 16px;
+	text-align: justify;
+	background: rgba(28, 86, 180, 0.3);
+	padding: 0 40px 0 40px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.compromisoContainer h1{
+	font-family: 'mifuente2';
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*----------Estructura Interna  (NO ESTABA AREGADO)------------------*/ 
+.B1 h1{
+	background: url(../img/B.png);
+	text-align: center;
+	font-family: 'mifuente2';
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 16px;
+	clear: both;
+	height: 70px;
+	text-align: center;
+	box-sizing: border-box;
+	letter-spacing: 3px;
+}
+
+
+/*----------Nuestro Equipo------------------*/
+.equipo{
+	height: 500px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center; /*---Agregado no estaba centrado-----*/
+}
+
+.columnasx4{
+	flex: 0 0 300px;
+
+}
+.columnasx4 img {
+	width: 100%;
+	flex: 1 0 0;
+}
+
+.columnasx4 h1{
+	font-size: 15px;
+	font-family: 'mifuente';
+	color: rgb(0,33,73);
+  font-weight: bold;
+	text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #002149;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: 'mifuente2';
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/*------------Footer------------------------*/
+.Fo{
+	background-image: url(../img/footer.png);
+	/*background-color: #002149;*/
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 120px;/*--------Cambio tamaño---------------*/
+}
+
+
+.F1 {
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 16px;/*--------Cambio tamaño---------------*/
+
+}
+
+.F2{
+	
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 16px;/*--------Cambio tamaño---------------*/
+
+}
+
+.F3{
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 16px;/*--------Cambio tamaño---------------*/
+}
+
+/*----- Media Queries-------*/
+/*
+@media screen and (min-width:850px) and (max-width: 1500px) {
+}*/
+
+@media screen and (min-width: 480px) and (max-width: 870px) {
+	.firmaContainer {
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.torre{
+		background-image: url(../img/P.png);
+		background-repeat: no-repeat;
+		background-size: 340px;
+		background-position: left center;
+		height: 450px;
+		flex:1 0 0;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.aboutFirmaContainer {
+		padding: 0 20px 0 20px;
+		display:flex;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.aboutFirma {
+		flex: 0 1 350px;
+		font-family: "mifuente2";
+		text-align: justify;
+	}
+
+	/*---------------Compromiso------------------*/
+
+	.compromiso{
+		background: url(../img/Compromiso.jpg);
+		width: 100%;
+		height: 900px;
+	}
+
+	.compromisoContainer{
+		width: 100%;
+		font-family: 'mifuente';
+		color: white;
+		font-size: 16px;
+		text-align: justify;
+		background: rgba(28, 86, 180, 0.3);
+		padding: 0 40px 0 40px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*------Nuestro Equipo-------*/
+
+	.equipo{
+		height: 550px;
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+ /*------------------Footer-----------------*/
+	.Fo{
+		background-color: #002149;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items:center;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 240px;
+	}
+
+
+	.F1 {
+		text-align: center;
+		color: white;
+		font-family: 'mifuente';
+		font-size: 18px;
+		flex: 0 0 10px;
+	}
+
+	.F2{
+		
+		text-align: center;
+		color: white;
+		font-family: 'mifuente';
+		font-size: 18px;
+		flex: 0 0 10px;
+	}
+
+	.F3{
+		text-align: center;
+		color: white;
+		font-family: 'mifuente';
+		font-size: 18px;
+		flex: 0 0 10px;
+	}
+
+}
+
+@media screen and (max-width:600px) and (min-width:480px) {
+	.equipo{
+		height: 900px;
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;	
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.aboutFirmaContainer {
+		flex: 0 0 300px;
+		padding: 0 30px 0 30px;
+		display:flex;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.aboutFirma {
+		flex: 0 1 245px;
+		font-family: "mifuente2";
+		text-align: justify;
+	}
+
+	.aboutFirma h1{
+		text-align: center;
+		font-family: 'mifuente2';
+		color: black;
+		font-size: 50px;
+		font-weight: bold;
+	}
+
+	/*------------Compromiso--------------*/
+
+	.compromiso{
+		background: url(../img/Compromiso.jpg);
+		width: 100%;
+		height: 950px;
+	}
+
+	.compromisoContainer{
+		width: 100%;
+		font-family: 'mifuente';
+		color: white;
+		font-size: 16px;
+		text-align: justify;
+		background: rgba(28, 86, 180, 0.3);
+		padding: 0 40px 0 40px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*-----Nuestro Equipo------*/
+
+	.equipo{
+		height: 1000px;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;	
+	}
+
+}

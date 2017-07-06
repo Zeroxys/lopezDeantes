@@ -1,0 +1,187 @@
+@font-face{
+	font-family: 'mifuente';
+	src:url('font/MyriadPro-Regular.otf');
+	} 
+@font-face{
+	font-family: 'mifuente2';
+	src:url('font/FuturaBook.ttf');
+}	
+
+*{
+	margin:0 auto;
+	background-color: white;
+	padding: 0px 0px 0px 0px;
+	
+}
+body{
+	margin: 0 auto;
+}
+
+header{
+	margin: 0px auto;
+	width: 100%;
+	height: 140px;
+	background-image: url(../img/header2.XL.png);
+	background-repeat: no-repeat;
+	background-size: 98%;
+	background-position: top;
+	position: static;
+	text-align: center;
+
+}
+header nav{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-top: 25px;
+
+ }
+header nav ul{
+	list-style: none;
+	text-align: right;
+	margin: 0px auto;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(1,38,57);
+	padding: 0px 0px 0px 0px;
+
+}
+
+header nav ul li{
+	text-decoration: none;
+	font-weight:  bold;
+	font-size:  24px;
+	display: initial;	
+	font-family: 'mifuente2';
+	width: 150px;
+	text-align: center;
+	background-color: rgba(1,38,57,0.5);
+	color: white;
+	margin-right: 20px;	
+	padding: 0px 0px 0px 0px;		
+	
+}
+header nav ul li a{
+	text-decoration:none;
+	background-color: rgba(1,38,57,0.5);
+	color: white;
+	padding: 5px 5px 5px 5px;
+	margin-right: 10px;
+	font-stretch: expanded;
+}
+header nav ul li a:hover{
+	border-bottom: 2px white solid;
+}
+
+.formato {
+	color:white;	
+
+}
+
+.empresa{
+	color: white;
+	font-family: 'mifuente2';
+	font-size: 50px;
+	display: inline-block;
+	width: 40%;
+	background-color: rgb(1,38,57);
+	margin-top: 10px;
+	vertical-align: top;
+	padding: 0px 0px 0px 0px;
+
+
+}
+
+.logo.L{
+	width: 100px;
+	display: inline-block;
+	width: 10%;
+	margin:0px auto;
+	text-align: center;
+
+}
+.logo.L img{
+	width: 100%;
+
+}
+
+.seccion1{
+	width: 100%;
+	height: 680px;
+	position: static;
+	background-position: initial;
+	background-size: 100%;
+	position: relative;
+}
+
+
+.lg img{
+	
+	width:30%;
+	display: block;
+    margin: auto;
+    
+}
+.lg h1{
+
+	text-align: center;
+	font-family: 'mifuente2';
+	color: rgb(1,38,57);
+	font-size: 35px;
+}
+
+
+.button {
+	border: none;
+	width: 15%;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+	display: block;
+	border-radius: 10px;
+	background-color: #002149;
+	border: none;
+	margin: auto;
+	font-family: 'mifuente2';
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.button:before {
+	 content:'';
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 width: 0px;
+	 height: 42px;
+	 background: rgba(255,255,255,0.3);
+	 border-radius: 5px;
+	 transition: all 2s ease;
+	 margin: 0 auto;
+}
+.button:hover:before {
+ 	width: 100%;
+
+}
+
+footer{
+	width: 100%;
+	position: relative;
+
+}
+
+.F{
+	background-color: #002149;
+	text-align: center;
+	color: white;
+	font-family: 'mifuente';
+	font-size: 18px;
+	padding:19px;
+
+}

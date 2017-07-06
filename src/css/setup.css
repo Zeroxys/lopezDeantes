@@ -1,0 +1,17 @@
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/FuturaBook.ttf");
+}
+
+html,body{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  box-sizing: inherit;
+  width: 100%;
+  height: 100vh;
+  font-family: myFont;
+}
