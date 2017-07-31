@@ -1,6 +1,7 @@
 @import "setup.css";
 @import "mixins.css";
 @import "variables.css";
+@import "navigation.css";
 @import "main.css";
 
 @custom-media --mobile ( max-width : 500px);

@@ -22,9 +22,9 @@
     font-size: calc(12px + 3 * ((100vw - 420px) / 860));
     margin:10px;
 }
-    
+
 .estructura-fotos {
-    height: 600px;
+    height: 500px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38,27 +38,25 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    
+
     @media ( max-width : 750px) {
-      border:15px solid blue;
+     background-color: black;
     }
 }
-    
+
 .compromiso-background-content ul li:nth-child(n) {
         padding-top:10px;
         font-size: calc(12px + 4 * ((100vw - 420px) / 860));
 }
 
       .compromiso-background-content ul {
-        color:white;
+        color:black;
 }
-    
+
 .aboutFirma-firmaBackground-content p {
-        font-size:15px;
+        font-size: calc(12px + 4 * ((100vw - 420px) / 860));
 }
-    
+
 .aboutFirma-banner {
     background-image: url(img/B.png);
     background-size:cover;
@@ -67,22 +65,45 @@
     height:40px;
 }
 
-  .navigation ul li a:hover { 
-    border-bottom: 2px solid white;
-}
-    
-.navigation ul li a {
-    text-decoration: none;
-    color:white;
-    font-size: calc(9px + 5 * ((100vw - 420px) / 860));
-    font-weight: bold;
-}
-    
-.navigation ul li {
-    list-style: none;
+.main-btn:hover:before {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
 }
 
-  .navigation ul {
+  .main-btn:before {
+    content:"";
+    transition:2s;
+    position:absolute;
+    width: 0%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+
+.main-btn {
+    width: 20%;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #002149;
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    font-size: calc(16px + 6 * ((100vw - 420px) / 860));
+    font-weight: bold;
+}
+
+.navigation li {
+    list-style: none;
+    color:white;
+
+    & a {
+      text-decoration:none;
+    }
+}
+
+  .navigation-navList {
     margin: 0;
     padding: 0;
     display: -webkit-box;
@@ -101,35 +122,6 @@
         -ms-flex: 0 1 400px; 
             flex: 0 1 400px;
     height: 50px;
-}
-    
-.main-btn:hover:before {
-    width: 100%;
-    background-color: rgba(255, 255, 255, .5);
-}
-
-  .main-btn:before {
-    content:"";
-    transition:2s;
-    position:absolute;
-    width: 0%;
-    height: 100%;
-    top:0;
-    left: 0;
-}
-    
-.main-btn {
-    width: 20%;
-    padding: 8px;
-    text-decoration: none;
-    color: white;
-    background-color: #002149;
-    text-align: center;
-    border-radius: 7px;
-    position: relative;
-    overflow: hidden;
-    font-size: calc(16px + 6 * ((100vw - 420px) / 860));
-    font-weight: bold;
 }@font-face {
   font-family: myFont;
   src: url(fonts/FuturaBook.ttf);
@@ -146,6 +138,41 @@ body{
   width: 100%;
   height: 100vh;
   font-family: myFont;
+}
+
+.navigation{
+  background-image:url(img/B.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row
+
+}
+
+.navigation-navTitle {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 250px;
+            flex: 0 1 250px;
+    margin:0;
+    color:white;
+    font-size: calc(16px + 14 * ((100vw - 420px) / 860));
 }
 
 .main{
@@ -190,42 +217,8 @@ body{
     font-size: calc(14px + 6 * ((100vw - 420px) / 860));
 }
 
-.navigation{
-  background-image:url(img/B.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: fixed;
-  width: 100%;
-  height: 65px;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row
-
-}
-
-.navigation h2 {
-    text-align: center;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 250px;
-            flex: 0 1 250px;
-    margin:0;
-    color:white;
-    font-size: calc(16px + 9 * ((100vw - 420px) / 860));
-}
-
 .aboutFirma{
+  padding-top:20px; 
   background-color:white;
   height: 500px
 }
@@ -251,14 +244,14 @@ body{
 
 .aboutFirma-firmaBackground-content {
       -webkit-box-flex: 0;
-          -ms-flex: 0 1 650px;
-              flex: 0 1 650px;
+          -ms-flex: 0 1 750px;
+              flex: 0 1 750px;
       margin-right:50px;
 }
 
 .aboutFirma-firmaBackground-content h3 {
         text-align: center;
-        font-size: 45px;
+        font-size: 50px;
         font-weight: bold;
         padding:0;
         margin:0;
@@ -310,7 +303,7 @@ body{
         text-align: center;
         margin:0;
         padding: 0;
-        color:white;
+        color:black;
         font-size: calc(28px + 10 * ((100vw - 420px) / 860));
         font-weight: bold;
 }
@@ -361,6 +354,7 @@ body{
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   font-weight: bold;
+  font-size:18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,6 +376,7 @@ body{
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   font-weight: bold;
+  font-size:18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,6 +425,7 @@ body{
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   font-weight: bold;
+  font-size:18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +474,7 @@ body{
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   font-weight: bold;
+  font-size:18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,125 +559,125 @@ body{
 }
 
 @media screen and (min-width: 1280px) {
-    
+
     .footer-content {}
-    
+
     .footer-content div:nth-child(n) {
         font-size: 16px;
     }
-    
+
     .estructura-nav {}
-    
+
     .estructura-nav h2 {
         font-size: 25px;
     }
-    
+
     .estructura {}
-    
+
     .estructura-foto {
         font-size: 15px;
     }
-    
+
     .compromiso-background-content {}
-    
+
     .compromiso-background-content ul li:nth-child(n) {
         font-size: 16px;
     }
-    
+
     .compromiso-background-content {}
-    
+
     .compromiso-background-content h3 {
         font-size: 38px;
     }
-    
-    .navigation {}
-    
-    .navigation ul li a {
-        font-size: 14px;
+
+    .aboutFirma-firmaBackground-content {}
+
+    .aboutFirma-firmaBackground-content p {
+        font-size: 16px;
     }
-    
-    .navigation {}
-    
-    .navigation h2 {
-        font-size: 25px;
-    }
-    
+
     .foot {}
-    
+
     .foot p {
         font-size: 20px;
     }
-    
+
     .main {}
-    
+
     .main-btn {
         font-size: 22px;
+    }
+
+    .navigation {}
+
+    .navigation-navTitle {
+        font-size: 30px;
     }
 }
 
 @media screen and (max-width: 420px) {
-    
+
     .footer-content {}
-    
+
     .footer-content div:nth-child(n) {
         font-size: 12px;
     }
-    
+
     .estructura-nav {}
-    
+
     .estructura-nav h2 {
         font-size: 20px;
     }
-    
+
     .estructura {}
-    
+
     .estructura-foto {
         font-size: 12px;
     }
-    
+
     .compromiso-background-content {}
-    
+
     .compromiso-background-content ul li:nth-child(n) {
         font-size: 12px;
     }
-    
+
     .compromiso-background-content {}
-    
+
     .compromiso-background-content h3 {
         font-size: 28px;
     }
-    
-    .navigation {}
-    
-    .navigation ul li a {
-        font-size: 9px;
+
+    .aboutFirma-firmaBackground-content {}
+
+    .aboutFirma-firmaBackground-content p {
+        font-size: 12px;
     }
-    
-    .navigation {}
-    
-    .navigation h2 {
-        font-size: 16px;
-    }
-    
+
     .foot {}
-    
+
     .foot p {
         font-size: 14px;
     }
-    
+
     .main {}
-    
+
     .main-btn {
+        font-size: 16px;
+    }
+
+    .navigation {}
+
+    .navigation-navTitle {
         font-size: 16px;
     }
 }
 
 @media ( max-width : 750px) {
-    
+
     .footer {
     height: 230px;
     }
-    
+
     .main-logo {
       background-size: 450px;
       -webkit-box-flex: 0;
@@ -688,18 +685,18 @@ body{
               flex: 0 0 700px;
       width: 450px;
     }
-    
+
     .aboutFirma-firmaBackground {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
     }
-    
+
     .aboutFirma-firmaBackground-content {
         margin-right: 0;
         padding: 0 10px 0 10px;
     }
-    
+
     .footer-content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -709,7 +706,7 @@ body{
   }
 
 @media ( max-width : 1200px) {
-    
+
     .main-logo {
       background-size: 600px;
       -webkit-box-flex: 0;
@@ -720,7 +717,7 @@ body{
     }
 
 @media ( max-width : 800px) {
-    
+
     .main-logo {
       background-size: 600px;
       -webkit-box-flex: 0;
@@ -731,7 +728,7 @@ body{
     }
 
 @media ( max-width : 500px) {
-    
+
     .main-logo {
       background-size: 300px;
       -webkit-box-flex: 0;
