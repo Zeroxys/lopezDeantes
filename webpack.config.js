@@ -94,7 +94,7 @@ module.exports = {
 
     new browserSyncPlugin({
       host : "localhost",
-      port : 3000,
+      port : 8080,
       server : {
         baseDir: ["dist"]
       },
