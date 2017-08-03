@@ -17,6 +17,7 @@
     flex: 0 1 250px;
     margin:0;
     color:white;
+    font-family: "myFont";
     font-size: responsive 16px 30px;
   }
 
@@ -29,15 +30,80 @@
     align-items: center; 
     flex: 0 1 400px;
     height: 50px;
+    font-family: "myFont";
   }
 
-  & li{
+  &-items{
     list-style: none;
-    color:white;
-
-    & a {
-      text-decoration:none;
-    }
+    padding-bottom:4px;
   }
 
+  &-items:hover{
+    border-bottom:3px solid white;
+  }
+
+  & a {
+    font-family: "myFont";
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+  }
+}
+
+.submenu {
+  width:160%;
+  padding:5px 0px;
+  position:absolute;
+  top:100%;
+  left:0px;
+  z-index:-1;
+  opacity:0;
+  transition:opacity linear 0.15s;
+  box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+  background:#2e2728;
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+	font-size: responsive 12px 16px;
+	font-family: "myFont";
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+
+  & span {
+    font-size:16px;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 4px;
+  z-index: 1;
+  color: #fff;
+	font-size: responsive 12px 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "myFont";
+}
+
+.dropdown-content p a{  
+  color: rgb(0,33,73);
+	font-size: responsive 9px 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "myFont";
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
