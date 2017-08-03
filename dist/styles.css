@@ -8,6 +8,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap:nowrap;
+        flex-wrap:nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -24,8 +26,7 @@
 }
 
 .estructura-fotos {
-    height: 500px;
-    width: 100%;
+    width:100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -38,9 +39,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
-    @media ( max-width : 750px) {
-     background-color: black;
+    & @media (\--desktop) {
+      height:500px;
     }
 }
 

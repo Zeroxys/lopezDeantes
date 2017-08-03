@@ -203,15 +203,15 @@
   }
 
   &-fotos {
-    height: 500px;
-    width: 100%;
+    width:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 
-    @media (--tablet) {
-     background-color: black;
+    & @media (--desktop) {
+      height:500px;
     }
   }
 
@@ -219,6 +219,7 @@
     flex: 0 0 250px;
     height: 300px;
     display: flex;
+    flex-wrap:nowrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
