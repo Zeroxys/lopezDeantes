@@ -76,6 +76,8 @@ __webpack_require__(4);
 
 __webpack_require__(5);
 
+__webpack_require__(6);
+
 // $('.btn-menu').click(function(event) {
 //     $('.menu-des').css({'height' : alto});
 //       if(!$('.menu-des').hasClass('abierto')){
@@ -9984,6 +9986,12 @@ module.exports = "module.exports = __webpack_public_path__ + \"main.html\";";
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"serviciosl.html\";";
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

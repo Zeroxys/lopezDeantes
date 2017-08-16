@@ -1,5 +1,6 @@
 import "../css/index.css"
 import "../main.html"
+import "../serviciosl.html"
 import "font-awesome/css/font-awesome.css"
 
 // $('.btn-menu').click(function(event) {
