@@ -4,6 +4,7 @@
 @import "navigation.css";
 @import "main.css";
 @import "serviciosl.css";
+@import "contabilidad.css";
 
 @custom-media --mobile ( max-width : 500px);
 @custom-media --tablet ( max-width : 750px);

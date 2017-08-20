@@ -78,6 +78,24 @@ __webpack_require__(5);
 
 __webpack_require__(6);
 
+__webpack_require__(7);
+
+__webpack_require__(8);
+
+__webpack_require__(9);
+
+__webpack_require__(10);
+
+__webpack_require__(11);
+
+__webpack_require__(12);
+
+__webpack_require__(32);
+
+__webpack_require__(33);
+
+__webpack_require__(13);
+
 // $('.btn-menu').click(function(event) {
 //     $('.menu-des').css({'height' : alto});
 //       if(!$('.menu-des').hasClass('abierto')){
@@ -95,6 +113,10 @@ __webpack_require__(6);
 //       }
 //   });
 
+// asesorias contables
+
+
+// asesorias legales
 $('nav').click(function (event) {
   if ($('.menu-des').hasClass('abierto')) {
     //$('.menu-des').animate({'right': '-50%'}, 500).removeClass('abierto');
@@ -9994,7 +10016,79 @@ module.exports = "module.exports = __webpack_public_path__ + \"serviciosl.html\"
 /* 6 */
 /***/ (function(module, exports) {
 
+module.exports = "module.exports = __webpack_public_path__ + \"area_fiscal.html\";";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"area_laboral.html\";";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"area_mercantil.html\";";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"area_familiar.html\";";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"area_civil.html\";";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"area_amparo.html\";";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"asesoria_contable.html\";";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"asesoria_electronica.html\";";
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"incorporacion_fiscal.html\";";
 
 /***/ })
 /******/ ]);
