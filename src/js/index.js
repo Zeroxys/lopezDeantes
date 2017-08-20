@@ -17,6 +17,7 @@ import "../asesoria_contable/incorporacion_fiscal.html"
 import "../asesoria_contable/personasfisicasmorales.html"
 import "../asesoria_contable/declaraciones_anuales.html"
 import "../asesoria_contable/devolucion_impuestos.html"
+import "../asesoria_contable/asesoria_contable_fiscal.html"
 
 import "font-awesome/css/font-awesome.css"
 
