@@ -90,11 +90,17 @@ __webpack_require__(11);
 
 __webpack_require__(12);
 
-__webpack_require__(32);
-
-__webpack_require__(33);
-
 __webpack_require__(13);
+
+__webpack_require__(14);
+
+__webpack_require__(34);
+
+__webpack_require__(35);
+
+__webpack_require__(36);
+
+__webpack_require__(15);
 
 // $('.btn-menu').click(function(event) {
 //     $('.menu-des').css({'height' : alto});
@@ -113,10 +119,6 @@ __webpack_require__(13);
 //       }
 //   });
 
-// asesorias contables
-
-
-// asesorias legales
 $('nav').click(function (event) {
   if ($('.menu-des').hasClass('abierto')) {
     //$('.menu-des').animate({'right': '-50%'}, 500).removeClass('abierto');
@@ -126,6 +128,11 @@ $('nav').click(function (event) {
     });
   }
 });
+
+// asesorias contables
+
+
+// asesorias legales
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -10058,11 +10065,21 @@ module.exports = "module.exports = __webpack_public_path__ + \"asesoria_contable
 /* 13 */
 /***/ (function(module, exports) {
 
+module.exports = "module.exports = __webpack_public_path__ + \"asesoria_electronica.html\";";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"incorporacion_fiscal.html\";";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 14 */,
-/* 15 */,
 /* 16 */,
 /* 17 */,
 /* 18 */,
@@ -10079,16 +10096,24 @@ module.exports = "module.exports = __webpack_public_path__ + \"asesoria_contable
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */
+/* 32 */,
+/* 33 */,
+/* 34 */
 /***/ (function(module, exports) {
 
-module.exports = "module.exports = __webpack_public_path__ + \"asesoria_electronica.html\";";
+module.exports = "module.exports = __webpack_public_path__ + \"personasfisicasmorales.html\";";
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports) {
 
-module.exports = "module.exports = __webpack_public_path__ + \"incorporacion_fiscal.html\";";
+module.exports = "module.exports = __webpack_public_path__ + \"declaraciones_anuales.html\";";
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"devolucion_impuestos.html\";";
 
 /***/ })
 /******/ ]);

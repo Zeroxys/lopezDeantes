@@ -149,6 +149,56 @@ h3:hover {
 
 }
 
+/*Baner para textox medianos*/
+
+.contableM{
+  height:900px;
+	display:flex;
+	justify-content: center;
+  align-items:center;
+	text-decoration: none;
+	text-align: justify;
+
+  @media(--desktop) {
+    height:1000px;
+  }
+
+  @media(--tablet) {
+    height: 800px;
+  }
+
+  @media(--mobile) {
+    height: 1600px;
+  }
+
+}
+
+.serviciosM{
+	background-color: #f7f7f7;
+	width: 35%;
+	height: 900px;
+	list-style: none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  @media(--desktop) {
+    height:500px;
+  }
+
+  @media(--tablet) {
+    width: 100%;
+    height: 500px;
+  }
+
+  @media(--mobile) {
+    height: 500px;
+  }
+}
+
+
+
+/*------------------------------*/
 /*Baner para textos largos*/
 
 .contableL{
@@ -197,6 +247,29 @@ h3:hover {
 }
 
 /*-------------------------*/
+
+.contableL h1{
+	text-align: center;
+	padding:responsive 16px 20px;
+	font-family: 'myFont2';
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.contableM h1{
+	text-align: center;
+	padding:responsive 16px 20px;
+	font-family: 'myFont2';
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
 
 .contable h1{
 	text-align: center;

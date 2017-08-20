@@ -940,6 +940,42 @@ h3:hover {
 
 }
 
+/*Baner para textox medianos*/
+
+.contableM{
+  height:900px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+	text-decoration: none;
+	text-align: justify
+
+}
+
+.serviciosM{
+	background-color: #f7f7f7;
+	width: 35%;
+	height: 900px;
+	list-style: none;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center
+}
+
+/*------------------------------*/
+
 /*Baner para textos largos*/
 
 .contableL{
@@ -975,6 +1011,28 @@ h3:hover {
 }
 
 /*-------------------------*/
+
+.contableL h1{
+	text-align: center;
+	padding:responsive 16px 20px;
+	font-family: 'myFont2';
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+.contableM h1{
+	text-align: center;
+	padding:responsive 16px 20px;
+	font-family: 'myFont2';
+	color: #fff;
+	font-size: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
 
 .contable h1{
 	text-align: center;
@@ -1372,6 +1430,15 @@ h3:hover {
     width:100%;
     }
 
+    .contableM {
+    height: 800px;
+    }
+
+    .serviciosM {
+    width: 100%;
+    height: 500px;
+    }
+
     .contableL {}
 
     .servicioscL {
@@ -1417,6 +1484,14 @@ h3:hover {
     height:850px;
     }
 
+    .contableM {
+    height:1000px;
+    }
+
+    .serviciosM {
+    height:500px;
+    }
+
     .contableL {
     height:1600px;
     }
@@ -1450,6 +1525,14 @@ h3:hover {
 
     .contable {
     height: 1300px;
+    }
+
+    .contableM {
+    height: 1600px;
+    }
+
+    .serviciosM {
+    height: 500px;
     }
 
     .contableL {
