@@ -104,6 +104,12 @@ __webpack_require__(18);
 
 __webpack_require__(19);
 
+__webpack_require__(20);
+
+__webpack_require__(21);
+
+__webpack_require__(22);
+
 // $('.btn-menu').click(function(event) {
 //     $('.menu-des').css({'height' : alto});
 //       if(!$('.menu-des').hasClass('abierto')){
@@ -121,10 +127,7 @@ __webpack_require__(19);
 //       }
 //   });
 
-// asesorias contables
-
-
-// asesorias legales
+//contacto
 $('nav').click(function (event) {
   if ($('.menu-des').hasClass('abierto')) {
     //$('.menu-des').animate({'right': '-50%'}, 500).removeClass('abierto');
@@ -134,6 +137,14 @@ $('nav').click(function (event) {
     });
   }
 });
+
+// auditoria
+
+
+// asesorias contables
+
+
+// asesorias legales
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -10100,6 +10111,24 @@ module.exports = "module.exports = __webpack_public_path__ + \"asesoria_contable
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"timbrado.html\";";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"serviciosauditoria.html\";";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+module.exports = "module.exports = __webpack_public_path__ + \"contacto.html\";";
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

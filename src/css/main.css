@@ -6,7 +6,7 @@
   min-height: 90%;
   flex: 1 0 0;
 
-  &-logo {
+  &--logo {
     background-image: url("../img/LOGO.png");
     background-size: 400px;
     background-position: center center;
@@ -15,25 +15,25 @@
     // height: 500px;
     flex:0 1 500px;
 
-    @media (--screens) {
+    @media(--screens) {
+      background-size: 400px;
+      flex: 0 0 500px;
+      width: 600px;
+    }
+
+    @media(--desktop) {
       background-size: 600px;
       flex: 0 0 700px;
       width: 600px;
     }
 
-    @media (--desktop) {
-      background-size: 600px;
-      flex: 0 0 700px;
-      width: 600px;
-    }
-
-    @media (--tablet) {
+    @media(--tablet) {
       background-size: 450px;
       flex: 0 0 700px;
       width: 450px;
     }
 
-    @media (--mobile) {
+    @media(--mobile) {
       background-size: 300px;
       flex: 0 0 400px;
       width: 300px;
@@ -209,11 +209,21 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-
-    & @media (--desktop) {
-      height:500px;
-    }
+    height:650px;
   }
+
+  @media(--desktop) {
+    height:900px;
+  }
+
+  @media(--tablet) {
+    height: 1200px;
+  }
+
+  @media(--mobile) {
+    height: 1280px;
+  }
+
 
   &-foto{
     flex: 0 0 250px;

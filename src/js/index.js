@@ -18,6 +18,13 @@ import "../asesoria_contable/personasfisicasmorales.html"
 import "../asesoria_contable/declaraciones_anuales.html"
 import "../asesoria_contable/devolucion_impuestos.html"
 import "../asesoria_contable/asesoria_contable_fiscal.html"
+import "../asesoria_contable/timbrado.html"
+
+// auditoria
+import "../auditoria/serviciosauditoria.html"
+
+//contacto
+import "../contacto/contacto.html"
 
 import "font-awesome/css/font-awesome.css"
 

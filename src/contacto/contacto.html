@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.png"><link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navigation" id="nav">
+    <h2 class="navigation-navTitle">LÓPEZ DEANTES</h3>
+    <ul class="navigation-navList">
+      <li class="navigation-items">
+        <a href="index.html">INICIO</a>
+      </li>
+      <li class="navigation-items">
+        <a href="main.html">NUESTRA FIRMA</a>
+      </li>
+
+      <div class="dropdown">
+			  <span>SERVICIOS</span>
+			  <div class="dropdown-content">
+			    <p style="color:rgb(0,33,73)" font><a href="serviciosl.html">ASESORÍA LEGAL</a></p>
+			    <br>
+			    <p><a href="asesoria_contable.html">ASESORÍA CONTABLE</a></p>
+			    <br>
+			    <p><a href="serviciosauditoria.html">AUDITORÍAS</a></p>
+			  </div>
+			</div>
+
+      <li class="navigation-items">
+        <a href="#">CONTACTO</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="seccionc">
+		<div class="c1">
+			<script type="text/javascript">
+
+				function validar()
+				{
+					var valid=false;
+					var nombre = document.getElementById("nombre").value;
+					var correo = document.getElementById("correo").value;
+					var telefono = document.getElementById("telefono").value;
+					var asunto = document.getElementById("asunto").value;
+					if(nombre == ""||rfc == ""||correo == ""||telefono == ""||asunto == "")
+					{
+						alert("TODOS LOS CAMPOS SON REQUERIDOS");
+						valid = false;
+					}
+					else
+					{
+						valid= true;
+					}
+					return valid;
+				}
+			</script>
+
+		<form action="correo.php" method="post" onsubmit="return validar()">
+			<div style="width:100%">
+					<h1>
+						Contáctanos
+					</h1>
+				</div>
+				<div class="contenido-formulario">	
+				<br>
+					<label for="nombre">Nombre</label>
+				</div>	
+				<div class="contenido-formulario">
+					<input name="nombre" id="nombre" type="text" placeholder="Nombre Completo" required style="width:88%; height: 25px; text-align: center; border: 2px solid rgb(1,37,58);">
+				</div>
+				
+				<div class="contenido-formulario">
+				<br>
+					<label for="correo">Correo eléctronico</label>
+				</div>
+				<div class="contenido-formulario">
+					<input name="correo" id="correo" type="mail" placeholder="Correo Electrónico" required style="width:88%; height: 25px; text-align: center; border: 2px solid rgb(1,37,58);">
+				</div>
+				
+				<div class="contenido-formulario">
+				<br>
+					<label for="telefono">Télefono</label>
+				</div>
+				<div class="contenido-formulario">
+					<input name="telefono" id="telefono" type="text" placeholder="Télefono" required style="width:88%; height: 25px; text-align: center; border: 2px solid rgb(1,37,58);">
+				</div>
+				
+				<div class="contenido-formulario">
+				<br>
+					<label for="asunto">
+					Asunto:
+				</label>
+				</div>
+				<div class="contenido-formulario">
+					<textarea name="asunto" id="asunto" cols="30" rows="10" required style="width:88%; text-align: left; border: 2px solid rgb(1,37,58);">
+					</textarea>
+				</div>
+
+				<div class="contenido-formulario">
+
+						<button type="submit" class=" correr">Enviar</button>
+					
+				</div>
+			</form>
+		</div>
+		
+	<div class="c2">
+
+	<h1>Ubicación</h1>
+	<br>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.124658557562!2d-92.93327168511533!3d17.972936387730154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd9d3debe9239%3A0xbd9d2659dff5e9ea!2sLopez+Deantes!5e0!3m2!1ses-419!2s!4v149342273048" width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+	</section>
+			
+			<section class="contenedor-columnas2">
+
+				<div class="column-container">
+					<div class="columnasx3">
+						<i class="fa fa-4x fa-whatsapp text-primary sr-icons" style="color: rgb(0,152,70);"></i>
+						<h2 style="color: rgb(0,33,73);">(993) 208 2430</h2>
+					</div>
+					<div class="columnasx3">
+						<a href="https://www.facebook.com/L%C3%B3pez-Deantes-1057596534271818/"  target="_blank"><i class="fa fa-4x fa-facebook text-primary sr-icons" style="color: rgb(41,82,150);"></i></a>
+						<h2><a href="https://www.facebook.com/L%C3%B3pez-Deantes-1057596534271818/" target="_blank" style="color: rgb(0,33,73);">López Deantes</a></h2>
+					</div>
+					<div class="columnasx3">
+						<a href="https://www.youtube.com/channel/UCI86nEtt9LUFHlJBJQI2wnQ/" target="_blank"><i class="fa fa-4x fa-youtube-play text-primary sr-icons" style="color: rgb(229,44,39);"></a></i>
+						<h2><a href="https://www.youtube.com/channel/UCI86nEtt9LUFHlJBJQI2wnQ/" target="_blank" style="color: rgb(0,33,73);">López Deantes</h2></a>			
+					</div>
+				</div>
+			</section>
+
+  
+
+
+
+  
+
+  <footer class="footer">
+    <section class="footer-content">
+      <div>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>(993) 3 13 97 55 <br>
+        (993) 3 13 97 26</p>
+      </div>
+
+      <div>
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <p>Prol. Paseo de la Sierra No. 910 casi esq. <br> Av. 16 de Septiembre <br> Col. 1ro. de Mayo C.P. 86190 Villahermosa, Tabasco</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope" aria-hidden="true"></i>  
+        <p>E-mail <br> info@lopezdeantes.com.mx</p>
+      </div>
+    </section>
+  </footer>
+
+</body>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
