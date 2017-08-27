@@ -11,6 +11,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  z-index: 10;
 
   &-navTitle{
     text-align: center;

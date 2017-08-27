@@ -14,6 +14,7 @@
   padding-top:115px;
 
   &-title {
+		border:1px solid red;
     font-size:responsive 25px 50px;
     color:white;
     padding-bottom:80px;
@@ -21,12 +22,17 @@
 }
 
 .serviciosContainer{
-	border:1px solid  black;
   padding:0;
   margin:0;
   display:flex;
-  justify-content:center;
-  align-items:center;
+
+	@media(--tablet) {
+		height : 500px;
+	}
+
+	@media(--mobile) {
+		height : 600px;
+	}
 }
 
 .servicios {
@@ -37,13 +43,17 @@
   height:500px;
 
 	@media(--tablet) {
-		height : 600px;
-		justify-content: flex-start;
+		height : 500px;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 70px;
 	}
 
 	@media(--mobile) {
-		height : 700px;
-		justify-content: flex-start;
+		height : 600px;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 70px;
 	}
 }
 
@@ -54,7 +64,7 @@
 	font-weight: bold;
 	text-decoration: none;
 	display: inline-block;
-
+	cursor: pointer;
 
 }
 .servicios_g h3{
@@ -101,20 +111,15 @@ h3:hover {
 }	
 
 .AP{
-	border:1px solid red;
-	display:flex;
-	justify-content: center;
-	text-decoration: none;
 	text-align: justify;
+	background-color: var(--btnColor);
 
 	@media(--tablet) {
-		height : 600px;
-		justify-content: flex-start;
+		height : 500px;
 	}
 
 	@media(--mobile) {
-		height : 700px;
-		justify-content: flex-start;
+		height : 600px;
 	}
 }
 .AP h1{
@@ -130,9 +135,7 @@ h3:hover {
 
 .AP1{
 	padding:0;
-	margin: 0;
-	border:3px solid green;
-	margin: auto;
+	margin: 70px auto;
 	width: 60%;
 	height: 500px;
 	font-family: 'mifuente';
@@ -180,17 +183,22 @@ h3:hover {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	padding-top: 80px;justify-content: flex-start;
+	padding-top: 80px;
+	justify-content: flex-start;
 }
 
 .banner-al h1{
 	font-family: 'mifuente2';
 	color: #fff;
-	font-size: 35px;
+	font-size: responsive 25px 35px;
 	font-weight: bold;
 	text-decoration: none;
 	background-color: rgba(28, 86, 180, 0.7);
 	width: 300px;
 	padding: 50px;
+	margin: auto;
 
+	@media(--mobile) {
+		width: 150px;
+	}
 }

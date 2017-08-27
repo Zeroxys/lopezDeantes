@@ -285,8 +285,8 @@
 
 .footer{
   width: 100%;
-  height: 120px;
-  background-image: url("../img/B.png");
+  height: 150px;
+  background-color: var(--btnColor);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
