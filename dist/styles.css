@@ -652,6 +652,7 @@ body{
 }
 
 .serviciosContainer{
+	border:1px solid  black;
   padding:0;
   margin:0;
   display:-webkit-box;
@@ -662,7 +663,7 @@ body{
           justify-content:center;
   -webkit-box-align:center;
       -ms-flex-align:center;
-          align-items:center
+          align-items:center;
 }
 
 .servicios {
@@ -682,7 +683,7 @@ body{
 .servicios_g h2{
 	font-family: 'myFont';
 	color: rgb(0, 33, 73);
-	font-size: 28px;
+	font-size: calc(16px + 12 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 	display: inline-block;
@@ -691,9 +692,9 @@ body{
 }
 
 .servicios_g h3{
-	font-family: 'myFont';
+	font-family: 'myFont';468px
 	color: rgb(0, 33, 73);
-	font-size: 20px;
+	font-size: calc(12px + 8 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -729,9 +730,7 @@ h3:hover {
 }
 
 .AP{
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 60%;
-	        flex: 0 0 60%;
+	border:1px solid red;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -739,21 +738,24 @@ h3:hover {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	text-decoration: none;
-	text-align: justify;
+	text-align: justify
 }
 
 .AP h1{
 	text-align: center;
-	padding:20px;
+	padding: 0 20px 0 20px;
 	font-family: 'mifuente2';
 	color: #fff;
-	font-size: 35px;
+	font-size: calc(18px + 17 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 	letter-spacing: 1px;
 }
 
 .AP1{
+	padding:0;
+	margin: 0;
+	border:3px solid green;
 	margin: auto;
 	width: 60%;
 	height: 500px;
@@ -767,7 +769,7 @@ h3:hover {
 	text-align: left;
 	font-family: 'mifuente';
 	color: #fff;
-	font-size: 17px;
+	font-size: calc(12px + 5 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 	
@@ -809,7 +811,7 @@ h3:hover {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-top: 80px;
+	padding-top: 80px;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
 }
 
 .banner-al h1{
@@ -5161,6 +5163,22 @@ a {
         font-size: 16px;
     }
 
+    .servicios_g h2 {
+        font-size: 28px;
+    }
+
+    .servicios_g h3 {
+        font-size: 20px;
+    }
+
+    .AP h1 {
+        font-size: 35px;
+    }
+
+    .AP h2 {
+        font-size: 17px;
+    }
+
     .banner-4 h1 {
         font-size: 26px;
     }
@@ -5252,6 +5270,22 @@ a {
         font-size: 9px;
     }
 
+    .servicios_g h2 {
+        font-size: 16px;
+    }
+
+    .servicios_g h3 {
+        font-size: 12px;
+    }
+
+    .AP h1 {
+        font-size: 18px;
+    }
+
+    .AP h2 {
+        font-size: 12px;
+    }
+
     .banner-4 h1 {
         font-size: 20px;
     }
@@ -5305,17 +5339,22 @@ a {
               flex-direction: column;
     }
 
-    .serviciosContainer {
-    -ms-flex-wrap:wrap;
-        flex-wrap:wrap;
-    }
-
     .servicios {
-    width:100%;
+		height : 600px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
     }
 
     .banner-ap {
     width:100%;
+    }
+
+    .AP {
+		height : 600px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
     }
 
     .serviciosContainerC {
@@ -5430,6 +5469,20 @@ a {
           -ms-flex: 0 0 400px;
               flex: 0 0 400px;
       width: 300px;
+    }
+
+    .servicios {
+		height : 700px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+    }
+
+    .AP {
+		height : 700px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
     }
 
     .banner-4 h1 {
