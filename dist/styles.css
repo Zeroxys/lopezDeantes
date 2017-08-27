@@ -884,6 +884,12 @@ h3:hover {
 	        flex-direction: row;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap
+
+	/*
+  @media(--tablet) {
+    //height:1300px;
+    flex-direction:column;
+  }*/
 }
 
 .serviciosc{
@@ -900,13 +906,27 @@ h3:hover {
   -webkit-box-align:center;
       -ms-flex-align:center;
           align-items:center
+
+	/*
+  @media(--desktop) {
+    height:800px;
+  }
+
+  @media(--tablet) {
+    width:100%;
+    height: 550px;
+  }
+
+  @media(--mobile) {
+    height: 500px;
+  }*/
 }
 
 .servicios_c h2{
 	text-align: justify;
 	font-family: 'myFont';
 	color: rgb(0, 33, 73);
-	font-size: calc(22px + 6 * ((100vw - 420px) / 860));
+	font-size: calc(18px + 10 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	margin-top: 32px;
 	margin-top: 2rem;
@@ -918,7 +938,7 @@ h3:hover {
 	text-align: justify;
 	font-family: 'myFont';
 	color: rgb(0, 33, 73);
-	font-size: calc(16px + 3 * ((100vw - 420px) / 860));
+	font-size: calc(12px + 7 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	margin-left: 32px;
 	margin-left: 2rem;
@@ -947,6 +967,7 @@ h3:hover {
 }
 
 .contable{
+	border:1px solid red;
   height:650px;
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -1089,7 +1110,7 @@ h3:hover {
 	text-align: justify;
 	font-family: 'mifuente';
 	color: white;
-	font-size: 17px;
+	font-size: calc(12px + 5 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -1098,7 +1119,7 @@ h3:hover {
 	text-align: justify;
 	font-family: 'mifuente';
 	color: #FFF;
-	font-size: 15px;
+	font-size: calc(13px + 2 * ((100vw - 420px) / 860));
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -5187,6 +5208,14 @@ a {
     .Acontable {
         font-size: 17px;
     }
+
+    .Acontable h3 {
+        font-size: 17px;
+    }
+
+    .Acontable h4 {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -5288,15 +5317,23 @@ a {
     }
 
     .servicios_c h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .servicios_c h3 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .Acontable {
         font-size: 12px;
+    }
+
+    .Acontable h3 {
+        font-size: 12px;
+    }
+
+    .Acontable h4 {
+        font-size: 13px;
     }
 }
 
@@ -5367,16 +5404,23 @@ a {
     }
 
     .serviciosContainerC {
-    //height:1300px;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
     }
 
     .serviciosc {
-    width:100%;
-    height: 550px;
+		border:2px solid white;
+    height:1350px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
     .servicios_c h2 {
@@ -5384,11 +5428,24 @@ a {
     }
 
     .servicios_c h3 {
+		padding: 0;
+		margin:0;
     text-align:center;
     }
 
     .banner-contabilidad {
     width:100%;
+    }
+
+    .contable {
+		border:2px solid white;
+    height:1350px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
     .contableM {
@@ -5431,11 +5488,23 @@ a {
     }
 
     .serviciosc {
-    height:800px;
+    height:1050px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
     .contable {
-    height:850px;
+    height:1050px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
     .contableM {
@@ -5500,12 +5569,39 @@ a {
     padding:35px;
     }
 
+    .serviciosContainerC {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+    }
+
     .serviciosc {
-    height: 500px;
+    height: 1500px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+  	-webkit-box-align:start;
+  	    -ms-flex-align:start;
+  	        align-items:flex-start;
+    }
+
+    .servicios_c h3 {
+		padding: 0;
+		margin:0;	
+  	text-align:left;
     }
 
     .contable {
-    height: 1300px;
+    height: 1500px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
     }
 
     .contableM {

@@ -50,10 +50,21 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 
+	@media(--mobile) {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	@media(--tablet) {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	/*
   @media(--tablet) {
     //height:1300px;
     flex-direction:column;
-  }
+  }*/
 }
 
 .serviciosc{
@@ -65,6 +76,26 @@
   justify-content:center;
   align-items:center;
 
+	@media(--desktop) {
+    height:1050px;
+		justify-content: flex-start;
+ 	 	align-items:flex-start;
+  }
+
+	@media(--tablet) {
+		border:2px solid white;
+    height:1350px;
+		justify-content: flex-start;
+ 	 	align-items:flex-start;
+  }
+
+  @media(--mobile) {
+    height: 1500px;
+		justify-content: flex-start;
+  	align-items:flex-start;
+  }
+
+	/*
   @media(--desktop) {
     height:800px;
   }
@@ -76,14 +107,14 @@
 
   @media(--mobile) {
     height: 500px;
-  }
+  }*/
 }
 
 .servicios_c h2{
 	text-align: justify;
 	font-family: 'myFont';
 	color: rgb(0,33,73);
-	font-size: responsive 22px 28px;
+	font-size: responsive 18px 28px;
 	font-weight: bold;
 	margin-top: 2rem;
   text-align:center;
@@ -97,14 +128,22 @@
 	text-align: justify;
 	font-family: 'myFont';
 	color: rgb(0,33,73);
-	font-size: responsive 16px 19px;
+	font-size: responsive 12px 19px;
 	font-weight: bold;
 	margin-left: 2rem;
   text-align:left;
 	text-transform: uppercase;
 
   @media(--tablet) {
+		padding: 0;
+		margin:0;
     text-align:center;
+  }
+
+	@media(--mobile) {
+		padding: 0;
+		margin:0;	
+  	text-align:left;
   }
 }
 
@@ -132,6 +171,7 @@ h3:hover {
 }
 
 .contable{
+	border:1px solid red;
   height:650px;
 	display:flex;
 	justify-content: center;
@@ -140,11 +180,22 @@ h3:hover {
 	text-align: justify;
 
   @media(--desktop) {
-    height:850px;
+    height:1050px;
+		justify-content: flex-start;
+ 	 	align-items:flex-start;
+  }
+
+	@media(--tablet) {
+		border:2px solid white;
+    height:1350px;
+		justify-content: flex-start;
+ 	 	align-items:flex-start;
   }
 
   @media(--mobile) {
-    height: 1300px;
+    height: 1500px;
+		justify-content: flex-start;
+  align-items:flex-start;
   }
 
 }
@@ -270,7 +321,6 @@ h3:hover {
 	
 }
 
-
 .contable h1{
 	text-align: center;
 	padding:responsive 16px 20px;
@@ -315,7 +365,7 @@ h3:hover {
 	text-align: justify;
 	font-family: 'mifuente';
 	color: white;
-	font-size: 17px;
+	font-size: responsive 12px 17px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -324,7 +374,7 @@ h3:hover {
 	text-align: justify;
 	font-family: 'mifuente';
 	color: #FFF;
-	font-size: 15px;
+	font-size: responsive 13px 15px;
 	font-weight: bold;
 	text-decoration: none;
 }
