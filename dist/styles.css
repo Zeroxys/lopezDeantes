@@ -92,44 +92,6 @@
     overflow: hidden;
     font-size: calc(16px + 6 * ((100vw - 420px) / 860));
     font-weight: bold;
-}
-
-.navigation a {
-    font-family: "myFont";
-    font-weight: bold;
-    color:white;
-    text-decoration: none;
-}
-
-.navigation-items:hover {
-    border-bottom:3px solid white;
-}
-
-.navigation-items {
-    list-style: none;
-    padding-bottom:4px;
-}
-
-  .navigation-navList {
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; 
-    -webkit-box-flex: 0; 
-        -ms-flex: 0 1 400px; 
-            flex: 0 1 400px;
-    height: 50px;
-    font-family: "myFont";
 }@font-face {
   font-family: myFont;
   src: url(fonts/FuturaBook.ttf);
@@ -149,39 +111,53 @@ body{
 }
 
 .navigation{
-  background-image:url(img/B.png);
+  color: #f1f1f1;  
+  background-color: #002149;
+  background-image: url(img/B.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
   width: 100%;
   height: 80px;
+  z-index: 10;
+}
+
+.navList{
+  padding:0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 450px;
+          flex: 0 0 450px;
+  display:block;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  z-index: 10
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
 }
 
-.navigation-navTitle {
-    text-align: center;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 250px;
-            flex: 0 1 250px;
-    margin:0;
-    color:white;
-    font-family: "myFont";
-    font-size: calc(16px + 14 * ((100vw - 420px) / 860));
+.navList li{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+.responsive-button{
+  font-size: 25px;
+  color: white;
+  background:none;
+  style-border:none;
+  border:none;
+  display:none;
+  cursor:pointer;
+  transition:.3s;
+  outline:none;
 }
 
 .submenu {
@@ -218,7 +194,6 @@ body{
   background-color: #f9f9f9;
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
-  padding: 12px 4px;
   z-index: 1;
   color: #fff;
 	font-size: calc(12px + -4 * ((100vw - 420px) / 860));
@@ -228,7 +203,8 @@ body{
 	font-family: "myFont";
 }
 
-.dropdown-content p a{  
+.dropdown-content p a{
+  padding: 12px;  
   color: rgb(0, 33, 73);
 	font-size: calc(9px + 7 * ((100vw - 420px) / 860));
 	text-decoration: none;
@@ -900,12 +876,12 @@ h3:hover {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center
+  -webkit-box-pack:start;
+      -ms-flex-pack:start;
+          justify-content:flex-start;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start
 
 	/*
   @media(--desktop) {
@@ -967,7 +943,6 @@ h3:hover {
 }
 
 .contable{
-	border:1px solid red;
   height:650px;
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -1073,7 +1048,7 @@ h3:hover {
 	color: #fff;
 	font-size: 26px;
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: none
 	
 }
 
@@ -1092,7 +1067,7 @@ h3:hover {
   padding: 0 50px 0 50px;
 	font-family: 'myFont';
 	font-size: calc(12px + 5 * ((100vw - 420px) / 860));
-	text-decoration: none
+	text-decoration: none;
 	
 }
 
@@ -5155,12 +5130,6 @@ a {
         font-size: 22px;
     }
 
-    .navigation {}
-
-    .navigation-navTitle {
-        font-size: 30px;
-    }
-
     .dropdown {
         font-size: 16px;
     }
@@ -5274,12 +5243,6 @@ a {
         font-size: 16px;
     }
 
-    .navigation {}
-
-    .navigation-navTitle {
-        font-size: 16px;
-    }
-
     .dropdown {
         font-size: 12px;
     }
@@ -5346,8 +5309,66 @@ a {
     .estructura {
     height: 1200px;
     }
+  .navigation{
+    color: #f1f1f1;  
+    background-color: #002149;
+    background-image: url(img/B.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: around;
+        -ms-flex-pack: around;
+            justify-content: around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+  }
 
-    .main--logo {
+  .responsive-button{
+    display: block;
+  }
+
+  .navList{
+    border:1px solid yellow;
+    margin:400px 0 0 0;
+    background-color: #002149;;
+    display:none;
+    padding:0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+    max-height: 100%;  
+    -ms-flex-pack:distribute;  
+        justify-content:space-around;
+  }
+
+  .navList li {
+    border:1px solid red;
+    text-align:center;
+  }
+
+  .navList li a {
+    color:#f1f1f1;
+  }
+
+  .show{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    min-height: 20em;
+    width: 300px;
+  }
+
+  .main--logo {
       background-size: 450px;
       -webkit-box-flex: 0;
           -ms-flex: 0 0 700px;
@@ -5355,29 +5376,29 @@ a {
       width: 450px;
     }
 
-    .aboutFirma-firmaBackground {
+  .aboutFirma-firmaBackground {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
     }
 
-    .aboutFirma-firmaBackground-content {
+  .aboutFirma-firmaBackground-content {
         margin-right: 0;
         padding: 0 10px 0 10px;
     }
 
-    .footer-content {
+  .footer-content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
     }
 
-    .serviciosContainer {
+  .serviciosContainer {
 		height : 500px;
     }
 
-    .servicios {
+  .servicios {
 		height : 500px;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
@@ -5388,22 +5409,22 @@ a {
 		margin-top: 70px;
     }
 
-    .banner-ap {
+  .banner-ap {
     width:100%;
     }
 
-    .AP {
+  .AP {
 		height : 500px;
     }
 
-    .serviciosContainerC {
+  .serviciosContainerC {
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
     }
 
-    .serviciosContainerC {
+  .serviciosContainerC {
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
 		        justify-content: flex-start;
@@ -5412,8 +5433,7 @@ a {
 		        align-items: flex-start;
     }
 
-    .serviciosc {
-		border:2px solid white;
+  .serviciosc {
     height:1350px;
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
@@ -5423,22 +5443,21 @@ a {
  	 	        align-items:flex-start;
     }
 
-    .servicios_c h2 {
+  .servicios_c h2 {
     text-align:center;
     }
 
-    .servicios_c h3 {
+  .servicios_c h3 {
 		padding: 0;
 		margin:0;
     text-align:center;
     }
 
-    .banner-contabilidad {
+  .banner-contabilidad {
     width:100%;
     }
 
-    .contable {
-		border:2px solid white;
+  .contable {
     height:1350px;
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
@@ -5448,28 +5467,43 @@ a {
  	 	        align-items:flex-start;
     }
 
-    .contableM {
+  .contableM {
     height: 800px;
     }
 
-    .serviciosM {
+  .serviciosM {
     width: 100%;
     height: 500px;
     }
 
-    .contableL {}
-
-    .servicioscL {
-    width:100%;
-    height: 550px;
+  .contableL {
+    height:1350px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
-    .Acontable {
-    width:100%;
+  .servicioscL {
+    height:1350px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
-    .Acontable {
-    padding: 0 40px 0 40px;
+  .contableM h1 {
+    height:1350px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
   }
 
@@ -5516,15 +5550,33 @@ a {
     }
 
     .contableL {
-    height:1600px;
+    height:1050px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
     .servicioscL {
-    height:600spx;
+    height:1050px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
 
-    .Acontable {
-    padding: 0 60px 0 60px;
+    .contableM h1 {
+    height:1050px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+ 	 	-webkit-box-align:start;
+ 	 	    -ms-flex-align:start;
+ 	 	        align-items:flex-start;
     }
   }
 
@@ -5533,8 +5585,45 @@ a {
     .estructura {
     height: 1280px;
     }
+  .responsive-button{
+    display: block;
+  }
 
-    .main--logo {
+  .navList{
+    margin:400px 0 0 0;
+    background-color: #002149;
+    display:none;
+    padding:0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    min-height: 0;  
+    -ms-flex-pack:distribute;  
+        justify-content:space-around;
+  }
+
+  .navList li {
+    border:1px solid red;
+    text-align:center;
+  }
+
+  .navList li a {
+    color:#f1f1f1;
+  }
+
+  .show{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    min-height: 20em;
+    width: 100px;
+  }
+
+  .main--logo {
       background-size: 300px;
       -webkit-box-flex: 0;
           -ms-flex: 0 0 400px;
@@ -5542,11 +5631,11 @@ a {
       width: 300px;
     }
 
-    .serviciosContainer {
+  .serviciosContainer {
 		height : 600px;
     }
 
-    .servicios {
+  .servicios {
 		height : 600px;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
@@ -5557,19 +5646,19 @@ a {
 		margin-top: 70px;
     }
 
-    .AP {
+  .AP {
 		height : 600px;
     }
 
-    .banner-al h1 {
+  .banner-al h1 {
 		width: 150px;
     }
 
-    .banner-4 h1 {
+  .banner-4 h1 {
     padding:35px;
     }
 
-    .serviciosContainerC {
+  .serviciosContainerC {
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
 		        justify-content: flex-start;
@@ -5578,7 +5667,7 @@ a {
 		        align-items: flex-start;
     }
 
-    .serviciosc {
+  .serviciosc {
     height: 1500px;
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
@@ -5588,13 +5677,13 @@ a {
   	        align-items:flex-start;
     }
 
-    .servicios_c h3 {
+  .servicios_c h3 {
 		padding: 0;
 		margin:0;	
   	text-align:left;
     }
 
-    .contable {
+  .contable {
     height: 1500px;
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
@@ -5604,20 +5693,42 @@ a {
           align-items:flex-start;
     }
 
-    .contableM {
+  .contableM {
     height: 1600px;
     }
 
-    .serviciosM {
+  .serviciosM {
     height: 500px;
     }
 
-    .contableL {
-    height: 2200px;
+  .contableL {
+    height: 1500px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
     }
 
-    .servicioscL {
-    height: 500px;
+  .servicioscL {
+    height: 1500px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+    }
+
+  .contableM h1 {
+    height: 1500px;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+  	-webkit-box-align:start;
+  	    -ms-flex-align:start;
+  	        align-items:flex-start;
     }
   }
 
