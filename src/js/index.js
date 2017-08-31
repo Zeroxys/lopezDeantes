@@ -28,8 +28,9 @@ import "../contacto/contacto.html"
 
 import "font-awesome/css/font-awesome.css"
 
-$(document).ready(function () {
-  $('.responsive-button').on('click', function () {
-    $('.navList').toggleClass('show');
-  })
+const button = $('.responsive-button')
+const navList = $('.navList')
+
+button.on('click', function () {
+  navList.toggleClass('show')
 })

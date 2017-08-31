@@ -1,4 +1,5 @@
 .navigation{
+  border:1px solid white;
   color: var(--mainColor);  
   background-color: #002149;
   background-image: url(../img/B.png);
@@ -13,6 +14,8 @@
 }
 
 .navList{
+  float:right;
+  border:1px solid black;
   padding:0;
   flex: 0 0 450px;
   display:block;
@@ -24,6 +27,10 @@
   padding:0;
   margin:0;
   list-style:none;
+}
+
+.navList li a{
+  color:white;
 }
 
 .responsive-button{
@@ -40,33 +47,35 @@
 
 @media(--tablet) {
   .navigation{
+    border:1px solid white;
     color: var(--mainColor);  
     background-color: #002149;
     background-image: url(../img/B.png);
     background-repeat: no-repeat;
     position: fixed;
-    display: flex;
-    justify-content: around;
-    align-items:center;
     width: 100%;
     height: 80px;
     z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
   }
 
   .responsive-button{
-    display: block;
+    border:1px solid red;
+    display: inline-block;
+    margin-left:100px;
   }
 
   .navList{
     border:1px solid yellow;
-    margin:400px 0 0 0;
-    background-color: #002149;;
+    margin-top:430px;
     display:none;
-    padding:0;
+    position:relative;
+    background-color: #002149;
     flex-direction: column;
-    flex: 0 0 300px;
-    max-height: 100%;  
-    justify-content:space-around;
+    flex: 0 0 280px;
+    transition: transform 0.4s ease;
   }
 
   .navList li {
@@ -79,6 +88,7 @@
   }
 
   .show{
+    border:10px solid #002149;
     display:flex;
     min-height: 20em;
     width: 300px;
@@ -139,6 +149,7 @@
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
+  text-align:center;
 
   & span {
     font-size:16px;

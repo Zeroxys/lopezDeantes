@@ -111,11 +111,7 @@ __webpack_require__(21);
 __webpack_require__(22);
 
 //contacto
-$(document).ready(function () {
-  $('.responsive-button').on('click', function () {
-    $('.navList').toggleClass('show');
-  });
-});
+var button = $('.responsive-button');
 
 // auditoria
 
@@ -124,6 +120,12 @@ $(document).ready(function () {
 
 
 // asesorias legales
+
+var navList = $('.navList');
+
+button.on('click', function () {
+  navList.toggleClass('show');
+});
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
