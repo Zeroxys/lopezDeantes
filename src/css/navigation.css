@@ -15,7 +15,6 @@
 
 .navList{
   float:right;
-  border:1px solid black;
   padding:0;
   flex: 0 0 450px;
   display:block;
@@ -47,7 +46,6 @@
 
 @media(--tablet) {
   .navigation{
-    border:1px solid white;
     color: var(--mainColor);  
     background-color: #002149;
     background-image: url(../img/B.png);
@@ -62,13 +60,11 @@
   }
 
   .responsive-button{
-    border:1px solid red;
     display: inline-block;
     margin-left:100px;
   }
 
   .navList{
-    border:1px solid yellow;
     margin-top:430px;
     display:none;
     position:relative;
@@ -79,7 +75,6 @@
   }
 
   .navList li {
-    border:1px solid red;
     text-align:center;
   }
 
