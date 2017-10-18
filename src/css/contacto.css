@@ -1,26 +1,3 @@
-.banner-c{
-	width: 100%;
-	background: url(../img/B.png);
-	clear: both;
-	height: 70px;
-	text-align: center;
-	box-sizing: border-box;
-	transition: 0.4s;
-}
-
-.banner-c h1{
-	margin-top: 80px;
-	text-align: center;
-	font-family: 'mifuente2';
-	color: rgb(1,38,57);
-	font-size: 40px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
-	padding-top: 10px;
-	letter-spacing: 2px;
-}	
-
 .seccionc{
   padding-top:80px;
 	display:flex;
@@ -57,17 +34,23 @@
  }
 
  .c2{
-	 background-color: white;
+	 display: flex;
+	 flex-wrap: wrap;
 	 height: 525px;
 	 width: 750px;
-	 bottom: 9px;
 	 border: 3px solid rgb(1,37,58);
 	 border-radius: 15px;
 	 box-sizing: border-box;
 	 color: rgb(1,38,57);
-	 float: right;
-	 margin-top: 3rem;
-	 margin-bottom: 3rem;
+}
+
+.map {
+	border-radius: 15px;
+}
+
+.ubicacion-text{
+	width: 100%;
+	text-align: 'center';
 }
 
 .contenido-formulario{
@@ -80,8 +63,6 @@
 	font-family: 'mifuente';
 	color: black;
 	font-size: 16px;
-	
-
 }
 
 
@@ -101,8 +82,6 @@
 	font-family: 'mifuente';
 	color: black;
 	font-size: 15px;
-
-
 }
 
 .datos{
@@ -132,6 +111,7 @@
 }
 
 /*------------NUEVA SECCION------------*/
+
 .contenedor-columnas2{
 	width: 100%;
 	height: 160px;
@@ -139,7 +119,20 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	margin: 60px 0 60px 0;
 }
+
+@media (--mobile) {
+	.contenedor-columnas2{
+		flex-direction : 'column';
+		height: 450px;
+	}
+
+	.column-container{
+		flex-direction : column;
+	}	
+}
+
 
 .column-container{
 	flex: 1 0 0;
@@ -159,67 +152,6 @@
 .columnasx3 h2{
 	font-family: 'mifuente';
 	color:  #fff; 
-	font-size: 25px;
+	font-size: responsive(19px 25px);
 	text-decoration: none;
-}
-.columnasx3 ul {
-	text-align: justify;
-	font-family: 'mifuente';
-	color:   #fff;  
-	font-size: 16px;
-	width: 90%;
-}
-
-.columnasx3 img{
-	width: 25%;
-}
-
-a {
-	text-decoration: none;
-}
-
-
-.FoN{
-	background-image: url(../img/B1.png);
-	width: 100%;
-	height: 120px;
-	margin-top: 6rem;
-}
-
-
-.F1N {
-
-	text-align: center;
-	color: white;
-	font-family: 'mifuente';
-	font-size: 18px;
-	padding:19px;
-	float: left;
-	margin-left: 13rem;
-	margin-top: 1rem;
-	text-decoration:none;
-}
-
-.F2N {
-	
-	text-align: center;
-	color: white;
-	font-family: 'mifuente';
-	font-size: 18px;
-	padding:19px;
-	float: left;
-	margin-top: 1rem;
-
-}
-
-.F3N{
-	
-	text-align: center;
-	color: white;
-	font-family: 'mifuente';
-	font-size: 18px;
-	padding:19px;
-	float: left;
-	margin-top: 1rem;
-
 }
