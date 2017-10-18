@@ -167,7 +167,6 @@ body{
   font-size: 25px;
   color: white;
   background:none;
-  style-border:none;
   border:none;
   display:none;
   cursor:pointer;
@@ -194,7 +193,6 @@ body{
   color: #fff;
 	font-size: calc(12px + 4 * ((100vw - 420px) / 860));
 	font-family: "myFont";
-	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
   text-align:center
@@ -215,7 +213,6 @@ body{
 	font-size: calc(12px + -4 * ((100vw - 420px) / 860));
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-family: "myFont";
 }
 
@@ -5286,11 +5283,13 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 280px;
-            flex: 0 0 280px;
-    transition: -webkit-transform 0.4s ease;
-    transition: transform 0.4s ease;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+    min-height: 0;  
+    transition: -webkit-transform 0.4s ease;  
+    transition: transform 0.4s ease;  
     transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+    margin:400px 0 0 0;
   }
 
   .navList li {
@@ -5302,7 +5301,6 @@ a {
   }
 
   .show{
-    border:10px solid #002149;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -5546,11 +5544,14 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100px;
-            flex: 0 0 100px;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
     min-height: 0;  
     -ms-flex-pack:distribute;  
         justify-content:space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .navList li {
