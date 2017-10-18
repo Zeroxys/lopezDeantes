@@ -1,5 +1,4 @@
 .navigation{
-  border:1px solid white;
   color: var(--mainColor);  
   background-color: #002149;
   background-image: url(../img/B.png);
@@ -107,7 +106,6 @@
   }
 
   .navList li {
-    border:1px solid red;
     text-align:center;
   }
 
